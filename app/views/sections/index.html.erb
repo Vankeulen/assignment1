@@ -16,8 +16,8 @@
     <% @sections.each do |section| %>
       <tr>
         <td><%= section.name %></td>
-        <td><%= section.professor_id %></td>
-        <td><%= section.course_id %></td>
+        <td><%= section.professor.name %></td>
+        <td><%= section.course.name %></td>
         <td><%= link_to 'Show', section %></td>
         <td><%= link_to 'Edit', edit_section_path(section) %></td>
         <td><%= link_to 'Destroy', section, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -29,3 +29,8 @@
 <br>
 
 <%= link_to 'New Section', new_section_path %>
+<br> You will have a drop down list to seclect the Professor and Course for the new Section.
+
+<p>
+Click <%= link_to "Here", welcome_index_path %> go back to welcome screen.
+</p>
