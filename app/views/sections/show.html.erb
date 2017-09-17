@@ -7,12 +7,12 @@
 
 <p>
   <strong>Professor:</strong>
-  <%= @section.professor_id %>
+  <%= @section.professor.name %>
 </p>
 
 <p>
   <strong>Course:</strong>
-  <%= @section.course_id %>
+  <%= @section.course.name %>
 </p>
 
 <%= link_to 'Edit', edit_section_path(@section) %> |
